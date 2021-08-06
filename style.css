@@ -524,8 +524,7 @@ border-radius: 10px;
   
 }
 
-.btn-vieux-port ,.btn-fort-de-pomegues , .btn-iles-du-frioul , .btn-parc-national-des-calanques ,
-.btn-notre-dame-de-la-garde , .btn-parc-longchamp {
+.btn-activites{
  box-shadow: 1px 2px #EDEDED; 
  border-bottom-left-radius: 5%;
  border-bottom-right-radius: 5%;
@@ -536,7 +535,7 @@ border-radius: 10px;
 
 
 
-/* cates activités */
+/* cartes activités */
 
 .premiere-c {
 grid-column-start: 1;
