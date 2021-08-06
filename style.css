@@ -1,0 +1,1006 @@
+
+
+body {
+
+  margin: 0px;
+  padding: 0px;
+  border: solid;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+
+}
+
+
+ body a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+/* header */
+
+
+
+
+
+    
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.btn-inscrire a {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-weight: bold;
+  font-size: 22px;
+  color: #0065FC;
+}
+
+ul {
+  width: 30%;
+  margin-left: 55%;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+ 
+ul li a:hover {
+color:#0065FC;
+} 
+
+header {
+  margin-bottom: 2rem;
+}
+
+hr {
+  display: none;
+}
+
+/* section 1 */
+
+
+
+.titre h2 br {
+  display: none;
+}
+
+/* localisation */
+
+.localisation {
+  margin-left: 10px;
+  margin-right: 600px;
+}
+
+
+#zonerecherche { 
+  font-size: 1.2em;
+  display: flex;
+  margin-top: 1em;
+  height: 40px;
+}
+
+#zonerecherche i {
+  color: black;
+  background-color: #F2F2F2;
+  border-radius: 25% 0 0 25%;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+}
+
+.logo-rechercher {
+  display:none;
+}
+
+#zonerecherche input {
+  width: 300px;
+  border: 2px solid #F2F2F2;
+  font-size: 1rem;
+  font-weight: bold;
+  }
+
+#zonerecherche a {
+  text-decoration: none;
+  background-color: #0065FC;
+  border-radius: 0px 15px 15px 0px ;
+  width: 6em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: #F2F2F2;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+
+/* filtres */
+
+
+.eco, .familial, .romantique, .animaux { 
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin: 13px 0px 0 30px;
+}
+
+.eco i, .familial i, .romantique i, .animaux i {
+    width: 35px;
+    height: 26px;
+    margin-right: -8%;
+    border: none;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 9px;
+    color: #0065FC;
+}
+
+
+.eco span, .familial span, .romantique span, .animaux span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5%;
+  padding-left: 12%;
+  padding-top: 3%;
+  padding-right: 5%;
+  margin-bottom: 3%;
+  margin-top: 0%;
+  margin-left: 10%;
+  margin-right: -15%;
+  border-top: 2px solid #F2F2F2;
+  border-right: 2px solid #F2F2F2;
+  border-bottom: 2px solid #F2F2F2;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+.eco:hover, .familial:hover, .romantique:hover, .animaux:hover {
+    color: #0065FC;
+}
+
+
+#section-filtres {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 95% 5%;
+  margin-left: 2%;
+  margin-right: 10%;
+}
+
+.filtres {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  font-weight: bold;
+  margin-left: 30%;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.eco {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  font-weight: bold;
+}
+
+
+.familial {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  font-weight: bold;
+}
+
+
+.romantique {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  font-weight: bold;
+}
+
+.animaux {
+  grid-column-start: 5;
+  grid-row-start: 1;
+  font-weight: bold;
+ }
+
+
+
+
+
+
+
+
+
+/* plus de 500 logements... */
+
+.info
+{
+    margin: 10px 35px 0 35px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.info span
+{
+    display: flex;
+    margin: 0 0 0 8px;
+}
+
+
+
+/* hébergements à Marseille */
+
+
+.hebergements-a-marseille {
+  width: 60%;
+  height: 492px;
+  border: solid;
+  background-color: #F2F2F2;
+  border-color: #F2F2F2;
+  border-radius: 15px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5% 40% 40% 15%;
+  grid-gap: 15px;
+  align-items: stretch;
+  justify-items: start;
+}
+
+
+.hebergements-a-marseille img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+.btn-hebergements-a-marseille {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  font-weight: bold;
+
+}
+
+/* cartes hébergements */
+
+
+.auberge-de-la-cannebiere {
+ 
+  
+  background-color: white;
+  grid-column-start: 1;
+  grid-row-start: 2;
+
+}
+
+
+.hotel-du-port {
+ 
+background-color: white;
+grid-column-start: 2;
+grid-row-start: 2;
+
+}
+
+.hotel-Les-mouettes {
+
+ background-color: white;
+ grid-column-start: 3;
+ grid-row-start: 2;
+ 
+}
+
+
+.hotel-de-la-mer {
+ 
+ background-color: white;
+ grid-column-start: 1;
+ grid-row-start: 3;
+
+}
+
+.auberge-le-panier {
+
+  background-color: white;
+  grid-column-start: 2;
+  grid-row-start: 3;
+
+}
+
+.hotel-chez-amina {
+ 
+  background-color: white;
+  grid-column-start: 3;
+  grid-row-start: 3;
+
+}
+
+
+.afficher-plus {
+  font-weight: bold;
+  grid-column-start: 1;
+  grid-row-start: 4;
+  
+}
+
+
+.auberge-de-la-cannebiere , .hotel-du-port , .hotel-Les-mouettes ,
+.hotel-de-la-mer , .auberge-le-panier , .hotel-chez-amina {
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 60% 20% 10% 10%;
+  border-radius: 10px;
+
+ }
+
+
+.btn {
+  font-weight: bold;
+}
+
+
+.image div {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  align-content: stretch;
+}
+
+.btn div {
+  grid-row-start: 2;
+}
+
+.prix div {
+  grid-row-start: 3;
+}
+
+.etoiles div {
+  grid-row-start: 4;
+}
+
+
+/* les plus populaires */
+
+
+.fa-chart-line {
+  float: right;
+ }
+
+.les-plus-populaires {
+  width: 30%;
+  height: 470px;
+  border: solid;
+  border-color: #F2F2F2;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  margin : 20px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 5% 30% 30% 30%;
+  grid-gap: 15px;
+  align-content: space-around;
+  }
+
+  .les-plus-populaires img {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+
+  }
+
+
+.btn-les-plus-populaires {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  font-weight: bold;
+
+}
+
+/* cartes les plus populaires */
+
+.hotel-le-soleil-du-matin {
+border: solid; 
+border-color: white;
+background-color: white;
+grid-column-start: 1;
+grid-row-start: 2;
+}
+
+.au-coeur-de-l-eau-chambres-d-hotes {
+border: solid;
+border-color: white;
+background-color: white; 
+grid-column-start: 1; 
+grid-row-start: 3;
+}
+
+.hotel-tout-bleu-et-blanc {
+border: solid;
+border-color: white;
+background-color: white;
+grid-column-start: 1;
+grid-row-start: 4;
+align-items: stretch;
+align-content: stretch;
+justify-content: center;
+}
+
+
+.hotel-le-soleil-du-matin ,
+.au-coeur-de-l-eau-chambres-d-hotes ,
+.hotel-tout-bleu-et-blanc {
+
+display: grid;
+grid-template-columns: 35% 65%;
+border-radius: 10px;
+
+}
+
+.hotel-tout-bleu-et-blanc img {
+  width: 100%;
+  height: 135px;
+}
+
+.droite1 {
+  display: grid;
+  grid-template-rows: 40% 20% 40%;
+  align-items: end;
+}
+
+.droite2 {
+  display: grid;
+  grid-template-rows: 40% 20% 40%;
+  align-items: end;
+}
+
+.droite3 {
+  display: grid;
+  grid-template-rows: 40% 20% 30%;
+  
+}
+
+.btn2 {
+  font-weight: bold;
+}
+
+
+
+/* organisation container */
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+}
+
+
+
+/* activités à Marseille */
+
+.activites-a-marseille {
+  width: 99%;
+  border: solid;
+  border-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  grid-gap: 3%;
+  justify-items: center;
+  justify-content: center;
+  
+}
+
+.activites-a-marseille img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+
+}
+
+.activites-a-marseille a{
+  font-weight: bold;
+  font-size: 14px;
+
+  
+}
+
+.btn-vieux-port ,.btn-fort-de-pomegues , .btn-iles-du-frioul , .btn-parc-national-des-calanques ,
+.btn-notre-dame-de-la-garde , .btn-parc-longchamp {
+ box-shadow: 1px 2px #EDEDED; 
+ border-bottom-left-radius: 5%;
+ border-bottom-right-radius: 5%;
+ margin-bottom: 10%;
+
+}
+
+
+
+
+/* cates activités */
+
+.premiere-c {
+grid-column-start: 1;
+display: grid;
+grid-template-rows: 85% 15%;
+
+}
+
+
+
+
+
+
+.seconde-c {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-rows: 45% 15% 25% 15%;
+  
+ 
+}
+
+
+
+.troisieme-c {
+  grid-column-start: 3;
+  display: grid;
+  grid-template-rows: 85% 15%;
+  
+}
+
+
+
+.quatrieme-c {
+  grid-column-start: 4;
+  display: grid;
+  grid-template-rows: 35% 15% 35% 15%;
+}
+
+
+
+/* footer */
+
+
+.bas-de-page {
+  width: 100%;
+  height: auto;
+  background-color: #F2F2F2;
+  display: grid;
+  grid-template-columns: 30% 30% 30% 10%;
+  grid-gap: 5px;
+}
+
+.a-propos {
+  grid-column-start: 1;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nos-hebergements {
+  grid-column-start: 2;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.assistance {
+  grid-column-start: 3;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* media queries mobile */
+
+
+/* header mobile */
+
+
+@media only screen and (min-width: 10px) and (max-width: 700px) {
+
+
+
+.sidebar {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: 50% 50%;
+ padding-top: 30px;
+}
+
+.logo {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  margin-right: 90px;
+
+}
+
+.btn-inscrire {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.btn-activites {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  margin-right: 110px;
+ 
+  
+}
+
+.btn-hebergement {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  margin-left: 0px;
+  
+}
+
+.btn-hebergement a {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn-activites a {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.btn-hebergement a:hover {
+color:#0065FC;
+text-decoration:none;
+padding-bottom: 19px;
+border-bottom: 3px solid #0065FC
+}
+
+.btn-activites a:hover {
+color:#0065FC;
+text-decoration:none;
+padding-bottom: 19px;
+border-bottom: 3px solid #0065FC
+}
+
+hr {
+  display: flex;
+  color: #EDEDED;
+  border-width: 2px;
+}
+
+.titre h2 br {
+  display: block;
+}
+
+.titre p {
+  margin-left: 25%;
+  margin-right: 1%;
+}
+
+
+.localisation {
+  margin-left: 180px;
+}
+
+#zonerecherche a {
+  display: none;
+}
+
+.logo-rechercher  {
+  display: block;
+  background-color: #0065FC;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px ;
+ 
+}
+
+
+/* filtres mobile */
+
+
+
+.eco i, .familial i, .romantique i, .animaux i {
+    width: 35px;
+    height: 28px;
+    border: none;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 9px;
+    color: #0065FC;
+}
+
+
+.eco span, .familial span, .romantique span, .animaux span {
+
+  display: flex;
+  margin: 0 0 21px -25px;
+  padding: 6px 17px 6px 30px;
+  border-top: 2px solid #F2F2F2;
+  border-right: 2px solid #F2F2F2;
+  border-bottom: 2px solid #F2F2F2;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+.eco:hover, .familial:hover, .romantique:hover, .animaux:hover {
+    color: #0065FC;
+}
+
+
+#section-filtres {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  margin-left: 10px;
+  margin-right: 200px;
+}
+
+
+
+.filtres {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  margin-left: 15%;
+  margin-top: 10%;
+ font-weight: bold;
+ font-size: 18px;
+}
+
+.eco {
+    grid-column-start: 1;
+  grid-row-start: 2;
+  font-weight: bold;
+
+}
+
+.familial {
+    grid-column-start: 2;
+  grid-row-start: 2;
+  font-weight: bold;
+}
+
+.romantique {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  font-weight: bold;
+}
+
+.animaux {
+  grid-column-start: 1;
+  grid-row-start: 4;
+  font-weight: bold;
+}
+
+
+/* container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+}
+
+.les-plus-populaires {
+  width: 87%;
+  height: auto;
+}
+
+.hebergements-a-marseille {
+  width: 90%;
+  height: auto;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.hotel-de-la-mer img {
+  height: 80%;
+}
+
+.hotel-chez-amina img {
+  height: 50%;
+}
+
+.afficher-plus {
+  font-size: 25px;
+}
+
+/*activités à Marseille */
+
+
+
+.activites-a-marseille {
+width: 90%;
+height: 50%;
+display: flex;
+flex-direction: column;
+margin-top: 1%;
+margin-bottom: 1%;
+margin-left: -1%;
+
+
+}
+
+.btn-activites-a-marseille {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10%;
+  margin-top: 1%;
+}
+
+.btn-activites-a-marseille a {
+  color: black;
+}
+
+
+.image-vieux-port {
+  height: 70%;
+}
+
+.btn-vieux-port {
+ margin-bottom: 15%; 
+ margin-left: 3%;
+}
+
+.btn-vieux-port a{
+
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+.image-fort-de-pomegues {
+  height: 40%;
+}
+
+.btn-fort-de-pomegues {
+ margin-bottom: 15%; 
+ margin-left: 3%;
+}
+
+.btn-fort-de-pomegues a{
+
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+.image-iles-du-frioul {
+  height: 60%;
+
+}
+
+.btn-iles-du-frioul {
+ margin-bottom: 15%; 
+ margin-left: 3%;
+}
+
+.btn-iles-du-frioul a{
+
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+.image-parc-national-des-calanques {
+  height: 70%;
+}
+
+.btn-parc-national-des-calanques {
+ margin-bottom: 15%; 
+ margin-left: 3%;
+}
+
+.btn-parc-national-des-calanques a{
+
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+
+.image-notre-dame-de-la-garde {
+  height: 70%;
+}
+
+.btn-notre-dame-de-la-garde {
+ margin-bottom: 15%; 
+ margin-left: 3%;
+}
+
+.btn-notre-dame-de-la-garde a{
+
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+.image-parc-longchamp {
+  height: 70%;
+}
+
+.btn-parc-longchamp {
+ margin-bottom: 15%; 
+ margin-left: 3%;
+}
+
+.btn-parc-longchamp a{
+
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+.footer {
+  margin-bottom: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
