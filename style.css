@@ -76,51 +76,70 @@ hr {
 
 /* localisation */
 
-.localisation {
-  margin-left: 10px;
-  margin-right: 600px;
+.loc {
+  border:#F2F2F2 solid;
+  border-width: 1px;
+  border-radius: 15px;
+  width: 35%;
+  margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-left: 3rem;
 }
 
 #zonerecherche {
-  font-size: 1.2em;
   display: flex;
-  margin-top: 1em;
-  height: 40px;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
 }
 
-#zonerecherche i {
+.fa-map-marker-alt {
+  font-size: 18px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 4% 5%;
+  background-color: #F2F2F2;
+}
+
+input {
+font-size: 17px;
+font-weight: bold;
+border: none;
+}
+
+#ville::placeholder {
   color: black;
-  background-color: #f2f2f2;
-  border-radius: 25% 0 0 25%;
-  width: 40px;
+  padding-left: 5%;
+}
+
+.loc a  {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-left: 18px;
-}
-
-.logo-rechercher {
-  display: none;
-}
-
-#zonerecherche input {
-  width: 300px;
-  border: 2px solid #f2f2f2;
-  font-size: 1rem;
+  width: 32%;
+  height: 95%;
+  color: white;
+  font-size: 17px;
   font-weight: bold;
+  text-decoration: none;
+  background-color: blue;
+  border: blue solid;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+} 
+
+#zonerecherche p {
+  width: 5%;
+  border: blue solid;
+  border-radius: 15px;
+  padding: 3% 3%;
+  font-size: 17px;
+  color: white;
+  background-color:blue;
 }
 
-#zonerecherche a {
-  text-decoration: none;
-  background-color: #0065fc;
-  border-radius: 0px 15px 15px 0px;
-  width: 6em;
-  padding-left: 1em;
-  padding-right: 1em;
-  color: #f2f2f2;
-  font-size: 1em;
-  display: flex;
-  align-items: center;
+#zonerecherche p {
+  display: none;
 }
 
 /* filtres */
@@ -131,6 +150,7 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-left: -2rem;
 }
 .filtres a {
   font-size: 17px;
@@ -165,7 +185,7 @@ hr {
   margin: 10px 35px 0 35px;
   display: flex;
   justify-content: flex-start;
-  margin-left: 5rem;
+  margin-left: 3rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
