@@ -17,35 +17,52 @@ body a {
 /* header */
 
 .sidebar img {
-  width: 80%;
-  margin-top: 15%;
-  margin-left: 25%;
+  width: 6rem;
 }
 
-.btn-inscrire a {
+.logo {
+  margin-left: 2rem;
+  margin-top: 20px;
+}
+
+.btn-inscrire {
+  font-size: 16px;
   font-weight: bold;
   color: #0065fc;
+  margin-top: 33px;
+  margin-right: 3rem;
+  margin-left: 3%;
 }
 
 .sidebar {
   display: flex;
-  justify-content: space-between;
+  align-content: center;
+  justify-content: space-around;
 }
-
 .sidebar ul {
-  width: 50%;
   display: flex;
-  align-items: center;
+  width: 100%;
+  align-content: center;
   justify-content: space-evenly;
-  list-style-type: none;
+  align-items: center;
+  padding-left: 40%;
 }
 
 .sidebar ul li {
-  width: 30%;
-  height: 98%;
+  display: flex;
+  height: 1rem;
+  justify-content: center;
+  align-content: center;
+  width: 40%;
+  height: 90%;
   padding-top: 2rem;
   font-size: 16px;
-  text-align: center;
+  list-style-type: none;
+  margin-right: -10%;
+}
+
+.sidebar ul li a {
+  margin-left: 3%;
 }
 
 ul li a:hover {
@@ -60,11 +77,12 @@ ul li:hover {
 /* article desktop */
 
 .titre h2 {
-  margin-left: 3%;
+  margin-left: 2rem;
 }
 
 .titre p {
-  margin-left: 3%;
+  margin-left: 2rem;
+  margin-top: -1rem;
 }
 
 .titre h2 br {
@@ -72,7 +90,7 @@ ul li:hover {
 }
 
 .fa-info-circle {
-  color: blue;
+  color: #0065fc;
   background-color: white;
 }
 
@@ -85,7 +103,7 @@ ul li:hover {
   width: 27rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 #zonerecherche {
@@ -124,20 +142,20 @@ input {
   font-size: 17px;
   font-weight: bold;
   text-decoration: none;
-  background-color: blue;
-  border: blue solid;
+  background-color: #0065fc;
+  border: #0065fc solid;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
 
 #zonerecherche p {
   width: 5%;
-  border: blue solid;
+  border: #0065fc solid;
   border-radius: 15px;
   padding: 3% 3%;
   font-size: 17px;
   color: white;
-  background-color: blue;
+  background-color: #0065fc;
 }
 
 #zonerecherche p {
@@ -164,11 +182,11 @@ input {
   border-radius: 40px;
   box-shadow: 0px 0px 5px #d3d3d3;
   padding: 11px 11px;
-  color: Blue;
+  color: #0065fc;
   background-color: #deebff;
 }
 
-.filtres span {
+.filtres span a {
   font-weight: bold;
   font-size: 16px;
   border: solid;
@@ -179,6 +197,10 @@ input {
   border-left: hidden;
   padding: 8px 25px 8px 25px;
   margin-left: -22px;
+}
+
+.filtres span a:hover {
+  color: #0065fc;
 }
 
 /* plus de 500 logements... */
@@ -215,6 +237,10 @@ input {
   grid-gap: 2%;
   justify-content: center;
   background-color: #f2f2f2;
+}
+
+.cartes-hebergements:hover {
+  cursor: pointer;
 }
 
 .cartes-hebergements div {
@@ -319,6 +345,10 @@ input {
   margin: 5%;
 }
 
+.cartes-pop:hover {
+  cursor: pointer;
+}
+
 .les-plus-populaires {
   width: 29%;
   height: 44rem;
@@ -349,12 +379,15 @@ main {
   flex-direction: row-reverse;
   justify-content: space-evenly;
   margin-bottom: 5rem;
+  margin-left: 2%;
+  margin-right: 1%;
 }
 
 /* activités à Marseille */
 
 .activites {
   margin-bottom: 2rem;
+  margin-left: 1%;
 }
 .activites h3 {
   margin-left: 3%;
@@ -373,6 +406,10 @@ main {
   grid-gap: 3%;
   justify-items: stretch;
   align-items: stretch;
+}
+
+.cartes-activites:hover {
+  cursor: pointer;
 }
 
 .cartes-activites img {
@@ -473,23 +510,26 @@ main {
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
   /* sidebar tablet*/
-
+  body {
+    width: 93%;
+  }
   .sidebar {
-    height: 6rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .logo {
-    width: 8rem;
-    margin-top: -1rem;
+    position: relative;
+    top: -2rem;
+    margin-left: 3rem;
   }
 
-  .btn-inscrire a {
+  .btn-inscrire {
     position: absolute;
-    top: 2%;
-    left: 73%;
+    top: -1rem;
+    left: 75%;
   }
 
   .btn-inscrire:hover {
@@ -498,17 +538,19 @@ main {
 
   .sidebar ul {
     list-style-type: none;
-    width: 160%;
-    margin-left: -13%;
-    margin-top: 1%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: -65%;
+    margin-top: 2rem;
+    height: 3rem;
   }
 
   .sidebar ul li {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
-    height: 100%;
     font-size: 16px;
     border-bottom: #f2f2f2 solid;
   }
@@ -522,16 +564,24 @@ main {
     border-bottom: solid #0065fc;
     border-bottom-width: 3px;
   }
+
+  /* info tablet */
+
+  .info {
+    margin-top: -1rem;
+    margin-bottom: -4rem;
+  }
+
   /* filtres tablet */
 
   .filtres-btn {
     position: absolute;
-    top: 27rem;
+    top: 20rem;
     right: 82%;
   }
 
   .filtres-btn a {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .filtres-btn :hover {
@@ -540,25 +590,25 @@ main {
 
   .eco {
     position: absolute;
-    top: 27rem;
+    top: 20rem;
     left: 22%;
   }
 
   .familial {
     position: absolute;
-    top: 27rem;
+    top: 20rem;
     left: 55%;
   }
 
   .romantique {
     position: absolute;
-    top: 30rem;
+    top: 23rem;
     left: 22%;
   }
 
   .animaux {
     position: absolute;
-    top: 30rem;
+    top: 23rem;
     left: 55%;
   }
 
@@ -566,7 +616,7 @@ main {
 
   .les-plus-populaires {
     margin-left: -43%;
-    width: 143%;
+    width: 146%;
     height: 25rem;
     grid-row-start: 1;
     grid-column-start: 2;
@@ -581,8 +631,9 @@ main {
   .cartes-pop div {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 65%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
   .cartes-pop img {
@@ -611,13 +662,14 @@ main {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: 30% 70%;
+    margin-left: 6%;
   }
 
   /* Hébergements à Marseille tablet */
 
   .hebergements {
     margin-top: 5rem;
-    width: 330%;
+    width: 340%;
     grid-row-start: 2;
     grid-column-start: 1;
   }
@@ -627,6 +679,8 @@ main {
   .activites {
     width: 100%;
     height: 38rem;
+    margin-top: -4rem;
+    margin-left: 5%;
   }
   .cartes-activites {
     display: grid;
@@ -670,6 +724,10 @@ main {
     width: 100%;
     height: 13rem;
   }
+
+  .bas-de-page {
+    width: 103%;
+  }
 }
 
 /* media queries mobile */
@@ -677,22 +735,25 @@ main {
 @media only screen and (min-width: 100px) and (max-width: 600px) {
   /* header mobile */
 
+  body {
+    width: 89%;
+  }
   .sidebar {
-    height: 6rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104%;
   }
 
   .logo {
-    width: 8rem;
-    margin-top: -1rem;
+    position: relative;
+    top: -2rem;
   }
 
-  .btn-inscrire a {
+  .btn-inscrire {
     position: absolute;
-    top: 2%;
-    left: 73%;
+    top: -1rem;
+    left: 65%;
   }
 
   .btn-inscrire:hover {
@@ -701,17 +762,19 @@ main {
 
   .sidebar ul {
     list-style-type: none;
-    width: 160%;
-    margin-left: -13%;
-    margin-top: 1%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: -79%;
+    margin-top: 2rem;
+    height: 3rem;
   }
 
   .sidebar ul li {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
-    height: 100%;
     font-size: 16px;
     border-bottom: #f2f2f2 solid;
   }
@@ -741,9 +804,9 @@ main {
   /* localisation mobile*/
 
   .loc {
-    width: 20rem;
+    width: 21rem;
     height: 3rem;
-    margin-left: 0rem;
+    margin-left: -1%;
   }
   .loc a {
     display: none;
@@ -758,12 +821,12 @@ main {
     justify-content: center;
     align-items: center;
     width: 5%;
-    border: blue solid;
+    border: #0065fc solid;
     border-radius: 15px;
     padding: 4% 5%;
     font-size: 17px;
     color: white;
-    background-color: blue;
+    background-color: #0065fc;
   }
 
   /* filtres mobile */
@@ -830,11 +893,12 @@ main {
   /*Les plus populaires mobile*/
 
   .les-plus-populaires {
-    width: 100%;
+    width: 113%;
     height: auto;
     align-content: center;
     justify-content: center;
     border-radius: 0px;
+    margin-left: -2%;
   }
 
   .cartes-pop div {
@@ -864,7 +928,7 @@ main {
     width: 94%;
     height: 100%;
     background-color: white;
-    margin-left: 1rem;
+    margin-left: 8%;
   }
   .cartes-hebergements div a {
     margin-bottom: 1rem;
@@ -903,6 +967,8 @@ main {
     height: auto;
     align-content: center;
     justify-content: center;
+    margin-top: -3rem;
+    margin-left: 2%;
   }
 
   .activites h3 a {
@@ -916,6 +982,7 @@ main {
     align-content: center;
     justify-content: center;
     margin-top: 1rem;
+    margin-left: 8%;
   }
 
   .cartes-activites div {
@@ -931,11 +998,12 @@ main {
   /* footer mobile */
 
   .bas-de-page {
-    width: 102%;
+    width: 113%;
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
     padding-bottom: 3rem;
+    margin-top: -1rem;
   }
   .bas-de-page div {
     margin-left: 2rem;
